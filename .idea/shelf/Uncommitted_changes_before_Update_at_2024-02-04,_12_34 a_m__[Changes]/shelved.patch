@@ -1,0 +1,147 @@
+Index: qodana.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/qodana.yaml b/qodana.yaml
+new file mode 100644
+--- /dev/null	(date 1705635153727)
++++ b/qodana.yaml	(date 1705635153727)
+@@ -0,0 +1,31 @@
++#-------------------------------------------------------------------------------#
++#               Qodana analysis is configured by qodana.yaml file               #
++#             https://www.jetbrains.com/help/qodana/qodana-yaml.html            #
++#-------------------------------------------------------------------------------#
++version: "1.0"
++
++#Specify inspection profile for code analysis
++profile:
++  name: qodana.starter
++
++#Enable inspections
++#include:
++#  - name: <SomeEnabledInspectionId>
++
++#Disable inspections
++#exclude:
++#  - name: <SomeDisabledInspectionId>
++#    paths:
++#      - <path/where/not/run/inspection>
++
++projectJDK: 21 #(Applied in CI/CD pipeline)
++
++#Execute shell command before Qodana execution (Applied in CI/CD pipeline)
++#bootstrap: sh ./prepare-qodana.sh
++
++#Install IDE plugins before Qodana execution (Applied in CI/CD pipeline)
++#plugins:
++#  - id: <plugin.id> #(plugin id can be found at https://plugins.jetbrains.com)
++
++#Specify Qodana linter for analysis (Applied in CI/CD pipeline)
++linter: jetbrains/qodana-jvm-community:latest
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1705631490357)
++++ b/.idea/modules.xml	(date 1705631490357)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/movie-ticket-booking-system.iml" filepath="$PROJECT_DIR$/movie-ticket-booking-system.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1706469973379)
++++ b/.idea/misc.xml	(date 1706469973379)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="openjdk-17" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+--- /dev/null	(date 1705631489896)
++++ b/.gitignore	(date 1705631489896)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1705631491018)
++++ b/.idea/vcs.xml	(date 1705631491018)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1705631490996)
++++ b/.idea/.gitignore	(date 1705631490996)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
