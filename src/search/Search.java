@@ -1,3 +1,5 @@
+package search;
+
 public interface Search {
     void searchByTitle(String title);
     void searchByLanguage(String language);

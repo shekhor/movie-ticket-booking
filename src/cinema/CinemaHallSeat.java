@@ -1,3 +1,5 @@
+package cinema;
+
 public class CinemaHallSeat {
     private int hall_seat_id;
     private String seat_type;

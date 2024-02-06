@@ -1,3 +1,8 @@
+package movie;
+
+import people.Person;
+
+import java.time.LocalDate;
 import java.util.List;
 
 public class Movie {

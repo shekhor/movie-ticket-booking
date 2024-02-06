@@ -1,3 +1,5 @@
+package people;
+
 public class Account {
     private String password;
     private String id;

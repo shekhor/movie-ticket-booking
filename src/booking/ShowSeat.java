@@ -1,4 +1,6 @@
-public class ShowSeat extends CinemaHallSeat{
+package booking;
+
+public class ShowSeat extends CinemaHallSeat {
 
     private int showSeatId;
     private boolean isReserved;

@@ -1,3 +1,5 @@
+package search;
+
 import java.util.Map;
 
 public class Catalog implements Search {

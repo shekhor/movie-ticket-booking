@@ -1,3 +1,8 @@
+package people;
+
+import datatype.Address;
+import people.Account;
+
 public abstract class Person {
     private String name;
     private Address address;

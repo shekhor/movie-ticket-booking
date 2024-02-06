@@ -1,3 +1,5 @@
+package booking;
+
 import java.time.LocalDate;
 public class Payment {
     private double amount;

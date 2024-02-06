@@ -1,3 +1,5 @@
+package cinema;
+
 public class CinemaHall {
     private String name;
     private int total_seats;
