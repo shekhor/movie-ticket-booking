@@ -1,5 +1,7 @@
 package people;
 
+import datatype.TicketInfoEnum;
+
 public class Account {
     private String password;
     private String id;

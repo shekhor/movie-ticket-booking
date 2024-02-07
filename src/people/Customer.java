@@ -1,5 +1,8 @@
 package people;
 
+import booking.Booking;
+import datatype.Address;
+
 import java.util.List;
 
 public class Customer extends Person {

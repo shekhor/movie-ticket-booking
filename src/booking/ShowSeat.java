@@ -1,5 +1,7 @@
 package booking;
 
+import cinema.CinemaHallSeat;
+
 public class ShowSeat extends CinemaHallSeat {
 
     private int showSeatId;
